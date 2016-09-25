@@ -1,0 +1,20 @@
+{
+  "name": "san-juan-plants",
+  "version": "1.0.0",
+  "description": "WIP - An API for information regarding plants that are native and well suited for the region of the San Juan Islands.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint"
+  },
+  "author": "Adam Lichty",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.0",
+    "eslint-plugin-import": "^1.7.0",
+    "eslint-plugin-jsx-a11y": "^1.2.0",
+    "eslint-plugin-react": "^5.0.1",
+    "knex": "^0.12.1"
+  }
+}
