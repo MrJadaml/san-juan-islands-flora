@@ -2,12 +2,15 @@
 
 const express = require('express');
 const logger = require('morgan');
-const bodyParser = require('body-parser');
 const routes = require('./routes');
 
 const app = express();
 
-app.use(logger('dev'));
+app.disable('x-powered-by');
+
+if (process.env.NODE_ENV !== 'test') {
+  app.use(logger('dev'));
+}
 
 app.use('/', routes);
 

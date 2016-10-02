@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  knex('plants').where({id: req.params.id}).first().then((plant) => {
+  knex('plants').where({ id: req.params.id }).first().then((plant) => {
     res.json(plant);
   });
 });
