@@ -6,6 +6,8 @@ const knex = require('../../db/knex');
 
 router.get('/', (req, res) => {
   knex('plants').then((data) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     res.json(data);
   });
 });
